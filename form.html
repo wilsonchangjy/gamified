@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title>Gamified.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="https://use.typekit.net/kzl5dqd.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="content"> 
+            <nav>
+                <a href="index.html">GAMIFIED.</a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="form-area">
+                <div class="tooltip-icon">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div class="form-container">
+                    <div class="form-box">
+                        <div class="form-item active" id="introduction">
+                            <h2>Introduction</h2>
+                            <h5>Let's add some character to your project.</h5>
+                            <p>For Gamified., you will need to have a design project in mind—it could be a web or mobile application, an educational workshop, a marketing campaign, and so on.</p>
+                            <br>
+                            <p>This entire process will require you to define your project's boundaries to provide suggestions on how to kickstart the gamification journey. Be <b>as objective as possible</b> to ensure accurate and valuable results.</p>
+                            <br>
+                            <p>Also, be sure to pay Jeepity a visit if any of the game design terms seem unfamiliar to you!</p>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload" id="project-details">
+                            <h2>What is your name, traveller?</h2>
+                            <h5>Tell us about your project.</h5>
+                            <input id="name" type="text" placeholder="Project name" required>
+                            <textarea id="description" placeholder="A brief description..." required></textarea>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>What are some of your unique qualities?</h2>
+                            <h5>Select the tags that best describe <span id="project-name">Your Project</span>.</h5>
+                            <form>
+                                <select name="tags" class="custom-select" multiple>
+                                    <option value="ecommerce">&#128717; E-commerce</option>
+                                    <option value="education">&#127979; Education</option>
+                                    <option value="entertainment">&#127918; Entertainment</option>
+                                    <option value="foodbeverage">&#127869; Food & Beverage</option>
+                                    <option value="finance">&#128181; Finance</option>
+                                    <option value="healthcare">&#127973; Healthcare</option>
+                                    <option value="lifestyle">&#129496; Lifestyle</option>
+                                    <option value="nonprofit">&#129309; Non-profit</option>
+                                    <option value="personal">&#128587; Personal</option>
+                                    <option value="productivity">&#128202; Productivity</option>
+                                    <option value="service">&#129489;&#8205;&#128295; Service</option>
+                                    <option value="socialnetworking">&#128101; Social Networking</option>
+                                    <option value="technology">&#128187; Technology</option>
+                                    <option value="transport">&#128669; Transport</option>
+                                    <option value="utility">&#128736;&#65039; Utility</option>
+                                </select>
+                            </form>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>Heads up!</h2>
+                            <h5>We're just getting started.</h5>
+                            <p>However, keep in mind that Gamified. is a design tool that provides suggestions based on the options you select for your project. This <b>does not</b> guarantee a final and foolproof product.</p>
+                            <br>
+                            <p>There are plenty more gamification tools and frameworks out there that may offer different solutions to your project, as well as many other nuances that cannot be factored into this general gamification workflow. Of course, this aims to provide a strong foundation as a starting point for the gamification process, which will have to be continuously evaluated and iterated in its implementation to ensure success.</p>
+                            <br>
+                            <p>But as always, all of your great projects have to start somewhere.</p>
+                            <br>
+                            <p>Let's have some fun!</p>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>Your quest to greatness is to achieve...</h2>
+                            <h5>Define the main goal of the gamification process for <span id="project-name">Your Project</span>.</h5>
+                            <form>
+                                <select name="goal" class="custom-select">
+                                    <option value="engagement">&#128525; User Engagement</option>
+                                    <option value="behaviour">&#128260; Behaviour Change</option>
+                                    <option value="learning">&#129504; Learning Outcomes</option>
+                                </select>
+                                <span class="mouseover" id="tooltip-engagement">
+                                    User Engagement refers to assessing the target user's response to your offering, whether its a service, a product or a website. 
+                                    <br>
+                                    Highly engaged users are more likely to try, buy or share feedback regarding the product or service.
+                                </span>
+                                <span class="mouseover" id="tooltip-behaviour">
+                                    Behaviour Change refers to a technique in gamification that induces a change in your target user's attitudes and behaviours regarding a certain matter.
+                                    <br>
+                                    It is about learning new behaviours, unlearning old patterns, and making space for new concepts within one's social and mental framework.
+                                </span>
+                                <span class="mouseover" id="tooltip-learning">
+                                    Learning Outcomes are behaviour or content goals that your target user needs to achieve and exhibit to show understanding.
+                                    <br>
+                                    These can be based on content standards or behaviours a user should improve on. This will result in an experience where knowledge is created and learning occurs.
+                                </span>
+                            </form>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>You act under the banner of...</h2>
+                            <h5>Which player type is your target audience catergorised under?</h5>
+                            <form>
+                                <select name="player" class="custom-select">
+                                    <option value="socialiser">&#128172; Socialiser</option>
+                                    <option value="free">&#128506;&#65039; Free Spirit</option>
+                                    <option value="achiever">&#127942; Achiever</option>
+                                    <option value="philanthropist">&#127873; Philanthropist</option>
+                                    <option value="disruptor">&#127183; Disruptor</option>
+                                    <option value="player">&#127922; Player</option>
+                                </select>
+                                <span class="mouseover" id="tooltip-socialiser">
+                                    As described by Marczewski, Socialisers are the ones who want to interact with others, and to be connected to others. They are interested in parts of the system that help them do this. These are the ones that will evangelise the internal social networks.
+                                    <br>
+                                    Socialisers are most motivated by the social connections aspects of <b>Relatedness</b>.
+                                </span>
+                                <span class="mouseover" id="tooltip-free">
+                                    As described by Marczewski, Free Spirits like to have agency. They do not want to be restricted in how they go through their personal journey, to explore the system. They are also likely to find the most holes in a system. Has a knack for wanting to build new things.
+                                    <br>
+                                    They will have the fanciest avatars and create the most personal content. Free Spirits seek self-expression and <b>Autonomy</b>.
+                                </span>
+                                <span class="mouseover" id="tooltip-achiever">
+                                    As described by Marczewski, Achievers are the ones who want to be the best at things or, at least, be achieving things within the system. They aim to attain 100% completion on the system. They do this for themselves and are probably not that bothered with showing off to others about it.
+                                    <br>
+                                    They will compete, but as a way to become better than others.  May also be motivated by status as a representation of their personal achievement. Achievers need a system that will enrich them and lead them towards <b>Mastery</b>.
+                                </span>
+                                <span class="mouseover" id="tooltip-philanthropist">
+                                    As described by Marczewski, Philanthropists want to feel that they are part of something bigger; they want to give to others but expect nothing in return. These are the ones who will answer endless questions on forums, just because they like to feel they are helping.
+                                    <br>
+                                    Philanthropists want a system that allows them to enrich others and feel a sense of altruism and <b>Purpose</b>.
+                                </span>
+                                <span class="mouseover" id="tooltip-disruptor">
+                                    As described by Marczewski, Disruptors disrupt a system in some way. This may be by acting on users or on the system itself. In general, they aim to disrupt the system either directly or through other users to force positive or negative change.
+                                    <br>
+                                    Disruptors want their voices to be heard and are motivated by <b>Change</b>.
+                                </span>
+                                <span class="mouseover" id="tooltip-player">
+                                    As described by Marczewski, Players will play along for the purpose of gaining rewards. They will do what is needed of them to collect rewards from the system, and are in it for themselves mostly.
+                                    <br>
+                                    Players often alter their behaviour to get what they want and find the easiest way to get there, as they are ultimately motivated by <b>Rewards</b>.
+                                </span>
+                            </form>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>What special items do you carry with you on your journey?</h2>
+                            <h5>What motivations should your target audience be engaged by?</h5>
+                            <p>It is recommended to pick at <b>least four</b>.</p>
+                            <br>
+                            <form>
+                                <select name="motivations" class="custom-select" multiple>
+                                    <option value="meaning">&#127895;&#65039; Epic Meaning & Calling</option>
+                                    <option value="development">&#128200; Development & Accomplishment</option>
+                                    <option value="creativity">&#128161; Empowerment of Creativity & Feedback</option>
+                                    <option value="ownership">&#128081; Ownership & Posession</option>
+                                    <option value="social">&#128111; Social Influence & Relatedness/Envy</option>
+                                    <option value="scarcity">&#9201;&#65039; Scarcity & Impatience</option>
+                                    <option value="curiosity">&#127920; Unpredictability & Curiosity</option>
+                                    <option value="loss">&#128184; Loss & Avoidance</option>
+                                </select>
+                                <span class="mouseover" id="tooltip-meaning">
+                                    According to Yu-Kai Chou, Epic Meaning & Calling is the Core Drive where a player believes that they are doing something greater than themselves or that they were “chosen” to do something.
+                                    <br>
+                                    A symptom of this is a player that devotes a lot of their time to maintaining a forum or helping to create things for the entire community (think Wikipedia or Open Source projects).
+                                    <br>
+                                    This also comes into play when someone has “Beginner's Luck”; an effect where people believe they have some type of gift that others don't or believe they were “lucky” to get that amazing sword at the very beginning of the game.
+                                </span>
+                                <span class="mouseover" id="tooltip-development">
+                                    According to Yu-Kai Chou, Development & Accomplishment is the internal drive of making progress, developing skills, and eventually overcoming challenges. The word “challenge” here is very important, as a badge or trophy without a challenge is not meaningful at all.
+                                    <br>
+                                    This is also the core drive that is the easiest to design for and coincidently is where most of the PBLs: points, badges, leaderboards mostly focus on.
+                                </span>
+                                <span class="mouseover" id="tooltip-creativity">
+                                    According to Yu-Kai Chou, Empowerment of Creativity & Feedback is when users are engaged in a creative process where they have to repeatedly figure things out and try different combinations.
+                                    <br>
+                                    People not only need ways to express their creativity, but they need to be able to see the results of their creativity, receive feedback, and respond in turn.
+                                    <br>
+                                    This is why playing with Legos and painting are fun in-and-of themselves and often become Evergreen Mechanics, where a game-designer no longer needs to continuously add more content to keep the activity fresh and engaging.
+                                </span>
+                                <span class="mouseover" id="tooltip-ownership">
+                                    According to Yu-Kai Chou, Ownership & Possession is the drive where users are motivated because they feel like they own something. When a player feels ownership, they innately want to make what their own better and own even more. 
+                                    <br>
+                                    Besides being the major core drive for wanting to accumulate wealth, this deals with many virtual goods or virtual currencies within systems.
+                                    <br>
+                                    Also, if a person spends a lot of time to customize their profile or avatar, she automatically feels more ownership towards it too. Finally, this is also the core drive that makes collecting stamps or puzzle pieces fun.
+                                </span>
+                                <span class="mouseover" id="tooltip-social">
+                                    According to Yu-Kai Chou, Social Influence & Relatedness/Envy incorporates all the social elements that drive people, including: mentorship, acceptance, social responses, companionship, as well as competition and envy.
+                                    <br>
+                                    When you see a friend that is amazing at some skill or owns something extraordinary, you become driven to reach the same level. Also, it includes the drive we have to draw closer to people, places, or events that we can relate to.
+                                    <br>
+                                    If you see a product that reminds you of your childhood, the sense of nostalgia would likely increase the odds of you buying the product. This Core Drive is relatively well-studied too, as many companies these days are putting a lot of priority on optimizing their online social strategies.
+                                </span>
+                                <span class="mouseover" id="tooltip-scarcity">
+                                    According to Yu-Kai Chou, Scarcity & Impatience is the drive of wanting something because you can't have it. Many games have Appointment Dynamics (come back 2 hours later to get your reward); the fact that people can't get something right now motivates them to think about it all day long.
+                                    <br>
+                                    This is the Core Drive utilized by Facebook when it first started: at first it was just for Harvard. Then it opened up to a few other prestigious schools, and eventually all colleges. When it finally opened up to everyone, many people wanted to join because they previously couldn't get in it.
+                                </span>
+                                <span class="mouseover" id="tooltip-curiosity">
+                                    According to Yu-Kai Chou, Unpredictability & Curiosity is generally a harmless drive of wanting to find out what will happen next. If you don't know what's going to happen, your brain is engaged and you think about it often. Many people watch movies or read novels because of this drive.
+                                    <br>
+                                    However, this drive is also the primary factor behind gambling addiction. Also, this core drive is utilized whenever a company runs a sweepstake or lottery program to engage users.
+                                    <br>
+                                    The very controversial Skinner Box experiments, where an animal irrationally presses a lever frequently because of unpredictable results, are exclusively referring to the core drive of Unpredictability & Curiosity, although many have misunderstood it as the driver behind points, badges, and leaderboard mechanics in general.
+                                </span>
+                                <span class="mouseover" id="tooltip-loss">
+                                    According to Yu-Kai Chou, the Loss & Avoidance core drive is based upon the avoidance of something negative happening. On a small scale, it could be to avoid losing previous work. On a larger scale, it could be to avoid admitting that everything you did up to this point was useless because you are now quitting.
+                                    <br>
+                                    Also, opportunities that are fading away have a strong utilization of this Core Drive, because people feel like if they didn't act immediately, they would lose the opportunity to act forever.
+                                </span>
+                            </form>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>Which of these are most important to you?</h2>
+                            <h5>Rank the chosen player motivations according to priority.</h5>
+                            <ul class="drag-list"></ul>
+                            <div class="form-nav"></div>
+                        </div>
+                        <div class="form-item preload">
+                            <h2>Loading...</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip-container">
+                    <h5 class="tooltip-name">Tooltips</h5>
+                    <p class="tooltip-text">Mouseover an option for a description of the element.</p>
+                    <p class="tooltip-prompt">Find out more.</p>
+                </div>
+            </div>
+            <div class="chatbot">
+                <div class="chat-icon">
+                    <p id="chat-icon">&#129302;</p>
+                    <span class="chat-circle">Jeepity: Gamification-AI-Chatbot!</span>
+                </div>
+                <div class="chat-interface">
+                    <div class="chat-close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="chat-top">
+                        <h5><span id="chatbot-name">Jeepity</span></h5>
+                        <label class="chat-switch">
+                            <input type="checkbox" id="chat-checkbox">
+                            <span class="slider-toggle"></span>
+                        </label>
+                    </div>
+                    <div class="chat-field"></div>
+                    <div class="chat-bottom">
+                        <input type="text" placeholder="Ask me about gamification!" id="chat-input"></input>
+                        <div class="chat-send"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    <div class="chat-footer">Powered by ChatGPT <i>(GPT 3.5 Turbo)</i></div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-item">
+                <p>Gamified.fun</p>
+                <p>Version 1.0</p>
+            </div>
+            <div class="footer-item">
+                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-last">
+                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
+            </div>
+        </section>
+
+        <script type="module" src="/js/firebase.js"></script>
+        <script type="module" src="/js/form.js"></script>
+        <script type="module" src="/js/openAI.js"></script>
+        <script type="module" src="/js/chatbot.js"></script>
+        <script type="module" src="/js/formConstructor.js"></script>
+        <script src="/js/formNavigation.js"></script>
+        <script src="/js/interact.js"></script>
+    </body>
+</html>
