@@ -466,15 +466,15 @@ input:focus, textarea:focus {
 }
 
 #duolingo:hover {
-    content: url("images/duolingoChart.png");
+    content: url("/images/duolingoChart.png");
 }
 
 #shopee:hover {
-    content: url("images/shopeeChart.png");
+    content: url("/images/shopeeChart.png");
 }
 
 #uber:hover {
-    content: url("images/uberChart.png");
+    content: url("/images/uberChart.png");
 }
 
 .gallery-card h4 {
