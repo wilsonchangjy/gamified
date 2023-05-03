@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title>Gamified.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="https://use.typekit.net/kzl5dqd.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred"></script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.298/build/spline-viewer.js"></script>
+    </head>
+    <body>
+        <section class="content"> 
+            <nav>
+                <a href="index.html">GAMIFIED.</a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="breakdown-box">
+                <div class="breakdown-landing">
+                    <div class="preview-window">
+                        <div class="preview-bar">
+                            <ul>
+                                <li class="preview-button red"></li>
+                                <li class="preview-button yellow"></li>
+                                <li class="preview-button green"></li>
+                            </ul>
+                        </div>
+                        <div class="preview-display">
+                            <div class="project-character">
+                                <div class="character-avatar">
+                                    <spline-viewer loading-anim url="https://prod.spline.design/MMJ8qb8-vDvTQfl1/scene.splinecode" id="character"></spline-viewer>
+                                </div>
+                                <h2 class="project-name">Sample Project Name</h2>
+                            </div>
+                            <div class="project-info">
+                                <p class="project-description">Sample Project Description</p>
+                                <p class="tags-class">Tags: <span class="project-tags"><b><i>sampleTag</i></b></span></p>
+                                <div class="elements-field">
+                                    <div class="key-elements"><h4>Key Elements:</h4></div>
+                                    <div class="secondary-elements"><h4>Secondary Elements:</h4></div>
+                                    <div class="supporting-elements"><h4>Supporting Elements:</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="running-bar border-bottom">
+                    <p class="running-text">"The reason you are using a product on Day 1 is often very different from that of Day 100." — Yu-kai Chou, <a href="https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/" target="_blank">Actionable Gamification</a> &#128218;
+                    "Gamification should not be about control. It is about motivation and engagement." — Andrzej Marczewski, <a href="https://www.gamified.uk/" target="_blank">Gamified UK</a> &#128421;
+                    "What I found out is that gamification success is really all about motivating players to achieve their goals" — Brian Burke, <a href="https://www.goodreads.com/book/show/18342380-gamify" target="_blank">Gamify</a> &#128214;
+                    </p>
+                </div>
+                <div class="breakdown-body">
+                    <div class="breakdown-chart">
+                        <canvas class="octalysis"></canvas>
+                    </div>
+                    <div class="breakdown-karma">
+                        <h4>Karma Rating: <span id="karma">...</span></h4>
+                        <p id="karma-description">Generating verdict...</p>
+                        <p><b><u>Disclaimer:</u></b> This rating system is based on the Octalysis framework, analysing the suggested gamification elements and features recommended to you based on your selected goals, player type and motivations.</p>
+                        <br>
+                        <p><i>"White Hat" core drives/motivations refer to Epic Calling & Meaning, Empowerment of Creativity & Feedback, Development & Accomplishment, while "Black Hat" core drives/motivations refer to Scarcity & Impatience, Loss & Avoidance, Unpredictability & Curiosity.</i></p>
+                    </div>
+                </div>
+                <div class="breakdown-cards border-none">
+                    <div class="card-box">
+                        <div class="card-item active" id="card-gamification">
+                            <h3>Gamification</h3>
+                            <h4>Remember!</h4>
+                            <p>The concept of gamification is not about <i>playing games</i>, but rather centred around the motivations of your target audience.</p>
+                            <span class="small-text">Gamified.fun</span>
+                        </div>
+                        <div class="card-item inactive" id="card-goals">
+                            <h3>Goals</h3>
+                            <h4>Ask the Hard Questions</h4>
+                            <p>Solidify the goals and objectives of your project clearly:</p>
+                            <li>What actions and decisions does your target user need to take?</li>
+                            <li>What are the barriers that are holding them back?</li>
+                            <li>What kind of learning outcome is intended?</li>
+                            <span class="small-text">Gamified.fun</span>
+                        </div>
+                        <div class="card-item inactive" id="card-players">
+                            <h3>Players</h3>
+                            <h4>Think Big!</h4>
+                            <p>Although it is better to have a distinct player type in mind, it will be useful to balance out other motivations as to not alienate other members of the target audience.</p>
+                            <p>Inclusivity goes a long way when scaling up.</p>
+                            <span class="small-text">Gamified.fun</span>
+                        </div>
+                        <div class="card-item inactive" id="card-motivations">
+                            <h3>Motivations</h3>
+                            <h4>What Keeps Us Going</h4>
+                            <p>It is always better to motivate your target user in an authentic context, instead of <i>tricking</i> them to do what you think needs to happen.</p>
+                            <p>Would you rather <i>want</i> to do something, or <i>need</i> to do something?</p>
+                            <span class="small-text">Gamified.fun</span>
+                        </div>
+                        <div class="card-item inactive" id="card-conclusion">
+                            <h3>Finally...</h3>
+                            <h4>The Fun Never Ends!</h4>
+                            <p>Remember that all good gamification projects have to start somewhere.</p>
+                            <p>However, continuous testing and refinement goes a long way in finding the right fit for your target audience and intended outcomes.</p>
+                            <span class="small-text">Gamified.fun</span>
+                        </div>
+                    </div>
+                    <div class="cards-buttons">
+                        <a class="back-button" id="cards-back">Back</a>
+                        <a class="next-button" id="cards-next">Next</a>
+                    </div>
+                </div>
+                <span id="scroll-target"></span>
+            </div>
+            <div class="chatbot">
+                <div class="chat-icon">
+                    <p id="chat-icon">&#129302;</p>
+                    <span class="chat-circle">Jeepity: Gamification-AI-Chatbot!</span>
+                </div>
+                <div class="chat-interface">
+                    <div class="chat-close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="chat-top">
+                        <h5><span id="chatbot-name">Jeepity</span></h5>
+                        <label class="chat-switch">
+                            <input type="checkbox" id="chat-checkbox">
+                            <span class="slider-toggle"></span>
+                          </label>
+                    </div>
+                    <div class="chat-field"></div>
+                    <div class="chat-bottom">
+                        <input type="text" placeholder="Ask me about gamification!" id="chat-input"></input>
+                        <div class="chat-send"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    <div class="chat-footer">Powered by ChatGPT <i>(GPT 3.5 Turbo)</i></div>
+                </div>
+            </div>
+            <div class="top-button">
+                <a href="#" class="back-top"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-item">
+                <p>Gamified.fun</p>
+                <p>Version 1.0</p>
+            </div>
+            <div class="footer-item">
+                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-last">
+                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
+            </div>
+        </section>
+
+        <script src="/src/menu.js"></script>
+        <script src="/src/interact.js"></script>
+        <script type="module" src="/src/breakdown.js"></script>
+        <script type="module" src="/src/firebase.js"></script>
+        <script type="module" src="/src/openAI.js"></script>
+        <script type="module" src="/src/chatbot.js"></script>
+        <script type="module" src="/src/breakdownAnalysis.js"></script>
+        <script src="/src/breakdownCards.js"></script>
+    </body>
+</html>

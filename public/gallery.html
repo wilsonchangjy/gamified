@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title>Gamified.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="https://use.typekit.net/kzl5dqd.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="content">
+            <nav>
+                <a href="index.html">GAMIFIED.</a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="gallery-box">
+                <div class="gallery-title">
+                    <h5>Case Studies</h5>
+                </div>
+                <div class="case-studies">
+                    <div class="grid-3">
+                        <a class="gallery-card" href="duolingo.html">
+                            <img src="/images/duolingo.jpg" id="duolingo">
+                            <h4>Duolingo</h4>
+                            <p class="card-text">Learn a new language with the world's most-downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.</p>
+                            <h5>Education, Social Networking, Technology</h5>
+                        </a>
+                        <a class="gallery-card" href="shopee.html">
+                            <img src="/images/shopee.jpg" id="shopee">
+                            <h4>Shopee</h4>
+                            <p class="card-text">Shopee is the leading e-commerce platform in Southeast Asia and Taiwan. It is a platform tailored for the region, providing customers with an easy, secure and fast online shopping experience through strong payment and logistical support.</p>
+                            <h5>E-commerce, Service, Technology</h5>
+                        </a>
+                        <a class="gallery-card gallery-last" href="uber.html">
+                            <img src="/images/uber.png" id="uber">
+                            <h4>Uber</h4>
+                            <p class="card-text">The Uber app gives you the power to get where you want to go with access to different types of rides across more than 10,000 cities. Uber is a platform where those who drive and deliver can connect with riders, eaters, and restaurants. In cities where Uber is available, you can use the Uber app to request a ride.</p>
+                            <h5>Lifestyle, Service, Transport, Technology</h5>
+                        </a>
+                    </div>
+                    <span id="scroll-target"></span>
+                </div>
+                <!-- <div class="search-filter">
+                    <div class="search">
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Search" id="gallery-search">
+                        </div>
+                    </div>
+                    <div class="sort-filter">                    
+                        <div class="dropdown" id="sort">
+                            <div class="dropdown-button">
+                                <span class="dropdown-display" id="sort-display">Sort<i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <ul class="dropdown-menu" id="sort-menu">
+                                <li class="sort-option">Latest</li>
+                                <li class="sort-option">Votes</li>
+                                <li class="sort-option">Name</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown" id="filter">
+                            <div class="dropdown-button">
+                                <span class="filter-display dropdown-display" id="filter-display">Filter<i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <ul class="dropdown-menu" id="filter-menu">
+                                <li class="filter-option">E-commerce</li>
+                                <li class="filter-option">Education</li>
+                                <li class="filter-option">Entertainment</li>
+                                <li class="filter-option">Food & Beverage</li>
+                                <li class="filter-option">Finance</li>
+                                <li class="filter-option">Healthcare</li>
+                                <li class="filter-option">Lifestyle</li>
+                                <li class="filter-option">Non-profit</li>
+                                <li class="filter-option">Personal</li>
+                                <li class="filter-option">Productivity</li>
+                                <li class="filter-option">Service</li>
+                                <li class="filter-option">Social Networking</li>
+                                <li class="filter-option">Technology</li>
+                                <li class="filter-option">Transport</li>
+                                <li class="filter-option">Utility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="gallery-title">
+                    <h5>All Projects</h5>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-content grid-4" style="display: none"></div>
+                    <div class="gallery-nav">
+                        <div class="pagination">
+                            <span id="pagination-target"></span>
+                        </div>
+                        <div class="nav-buttons"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-button">
+                <a href="#" class="back-top"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-item">
+                <p>Gamified.fun</p>
+                <p>Version 1.0</p>
+            </div>
+            <div class="footer-item">
+                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-last">
+                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
+            </div>
+        </section>
+
+        <script src="/src/menu.js"></script>
+        <!-- <script src="/src/searchFilter.js"></script> -->
+        <script type="module" src="/src/gallery.js"></script>
+        <script type="module" src="/src/firebase.js"></script>
+    </body>
+</html>
