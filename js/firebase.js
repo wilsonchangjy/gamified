@@ -29,10 +29,12 @@ onAuthStateChanged(auth, user => {
     console.log("Session is signed in anonymously");
   }
   else {
-    console.log("Session is not signed in...");
+    console.log("Session has not been signed in...");
 
     signInAnonymously(auth).then(() => {
       console.log("Signed in anonymously");
+      console.log("refreshing...");
+      location.reload();
     }).catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
@@ -92,8 +94,6 @@ export async function getAPIKey() {
 }
 
 export async function getReference() {
-  //localStorage.view = "???";
-
   const reference = ref(database, "client/view");
   const viewKey = localStorage.view;
 

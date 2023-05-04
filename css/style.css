@@ -99,7 +99,7 @@ p {
     color: #111;
 }
 
-a:visited {
+a, a:visited {
     color: #111;
 }
 
@@ -159,7 +159,6 @@ input:focus, textarea:focus {
 }
 
 .big-title {
-    width: 60%;
     color: #111;
     position: relative;
     top: 50%;
@@ -171,7 +170,7 @@ input:focus, textarea:focus {
 }
 
 .big-title h1 {
-    font-size: 7.5vh;
+    font-size: 10vh;
 }
 
 .big-title h5 {
@@ -878,11 +877,6 @@ input:focus, textarea:focus {
     opacity: 1;
     pointer-events: all;
     transform: translateX(0px);
-}
-
-.background-bound {
-    width: 100%;
-    min-height: 86.75vh;
 }
 
 #form-next {
@@ -1810,4 +1804,29 @@ input:checked + .slider-toggle:before {
     font-weight: 200;
     font-style: normal;
     opacity: 0.25;
+}
+
+/* About Page */
+.text-box {
+    min-height: 87.25vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-intro {
+    border-right: 1px solid #111;
+}
+
+.about-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    padding: 32px;
+}
+
+.about-text a:hover {
+    color: #02C39A;
 }
