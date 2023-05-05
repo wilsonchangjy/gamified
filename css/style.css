@@ -1808,7 +1808,7 @@ input:checked + .slider-toggle:before {
 
 /* About Page */
 .text-box {
-    min-height: 87.25vh;
+    min-height: 92.5vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
