@@ -2,7 +2,7 @@ import { getAPIKey } from "./firebase.js";
 
 const url = "https://api.openai.com/v1/chat/completions"
 const altUrl = "https://api.openai.com/v1/completions"
-const apiKey = await getAPIKey();
+async const apiKey = await getAPIKey();
 var systemMessage = {
     role: "system",
     content: "Direct all responses in the context of gamification and game design. Keep responses within 280 characters.",
