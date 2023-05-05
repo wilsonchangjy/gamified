@@ -2,9 +2,14 @@ import { getAPIKey } from "./firebase.js";
 
 const url = "https://api.openai.com/v1/chat/completions"
 const altUrl = "https://api.openai.com/v1/completions"
-const apiKey = async () => {
-        await getAPIKey();
-    }
+const apiKey = tryAPI();
+
+async function tryAPI() {
+    const key = await getAPIKey();
+    console.log(key);
+    return key;
+}
+
 var systemMessage = {
     role: "system",
     content: "Direct all responses in the context of gamification and game design. Keep responses within 280 characters.",
@@ -46,7 +51,7 @@ async function processMessageToChatGPT(chatHistory) {
     const response = await fetch(url, {
         method: "POST",
         headers: {
-            "Authorization": `Bearer ${apiKey}`,
+            "Authorization": `Bearer ${await tryAPI()}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify(packageBody)
@@ -90,7 +95,7 @@ export const getAnswerFromChatGPT = async (prompt) => {
         method: "POST",
         headers: {
             'Content-Type': "application/json",
-            'Authorization': `Bearer ${apiKey}` 
+            'Authorization': `Bearer ${await tryAPI()}` 
         },
         body: JSON.stringify(body), 
     }
