@@ -60,6 +60,7 @@ export function writeProjectData(name, description, tags, goal, player, motivati
   onChildAdded(reference, (data) => {
     console.log("form submitted!");
     localStorage.view = data.key;
+    writeClientView(data.key);
 
     window.location = "breakdown.html";
   });
@@ -126,4 +127,12 @@ export function writeAffinityData(elementID, motivation, value) {
   const reference = ref(database, "elements/" + elementID + "/" + motivation);
 
   set(reference, value);
+}
+
+function writeClientView(key) {
+  const reference = ref(database, "client/view");
+
+  set(reference, key);
+
+  console.log("written" + key);
 }
