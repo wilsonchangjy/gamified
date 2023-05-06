@@ -55,9 +55,8 @@ export function writeProjectData(name, description, tags, goal, player, motivati
     projectGoal: goal,
     playerType: player,
     playerMotivations: motivations
-  });
-
-  onChildAdded(reference, (data) => {
+  })
+  .then((data) => {
     console.log("form submitted!");
     localStorage.view = data.key;
     writeClientView(data.key);
