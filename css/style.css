@@ -1156,7 +1156,7 @@ input:focus, textarea:focus {
 
 .project-character {
     border-radius: 0 0 0 15px;
-    width: fit-content;
+    width: 100%;
     min-width: 25%;
     max-width: 30%;
 
