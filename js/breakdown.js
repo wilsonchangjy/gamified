@@ -268,14 +268,14 @@ function updateAffinity() {
 
                     if (concensus && (element[motivation] >= 0 && element[motivation] <= 99)) {
                         const newValue = element[motivation] + increment;
-                        const elementID = element.name.replace("/", "").replace(" & ", "").replace(/\s+/g, "").toLowerCase();
+                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(/\s+/g, "").toLowerCase();
 
                         console.log(elementID + motivation + newValue);
                         writeAffinityData(elementID, motivation, newValue);
                     }
                     else if (!concensus && (element[motivation] >= 1 && element[motivation] <= 100)) {
                         const newValue = element[motivation] - increment;
-                        const elementID = element.name.replace("/", "").replace(" & ", "").replace(/\s+/g, "").toLowerCase();
+                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(/\s+/g, "").toLowerCase();
 
                         console.log(elementID + motivation + newValue);
                         writeAffinityData(elementID, motivation, newValue);
