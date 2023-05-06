@@ -133,6 +133,4 @@ function writeClientView(key) {
   const reference = ref(database, "client/view");
 
   set(reference, key);
-
-  console.log("written" + key);
 }

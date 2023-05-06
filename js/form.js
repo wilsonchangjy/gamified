@@ -54,7 +54,6 @@ function formManager() {
         detailInputs.forEach(detailInput => {
             detailInput.addEventListener('input', () => {
                 // name or description input has changed
-                console.log("details updated");
                 verifyDetails();
             });
         });
@@ -70,7 +69,6 @@ function formManager() {
 
         for (const child of tagInputs.children) {
             child.addEventListener('click', () => {
-                console.log("tags updated");
                 updateFormInputs("#tags");
             });
         }
@@ -96,7 +94,6 @@ function formManager() {
 
         for (const child of goalInputs.children) {
             child.addEventListener('click', () => {
-                console.log("goal updated");
                 verifySelection(updateFormInputs("#goal"));
             });
         }
@@ -114,7 +111,6 @@ function formManager() {
 
         for (const child of playerInputs.children) {
             child.addEventListener('click', () => {
-                console.log("player updated");
                 verifySelection(updateFormInputs("#player"));
             });
         }
@@ -132,7 +128,6 @@ function formManager() {
 
         for (const child of motivationsInput.children) {
             child.addEventListener('click', () => {
-                console.log("motivations updated");
                 verifySelection(updateFormInputs("#motivations"));
             });
         }
@@ -197,7 +192,6 @@ function updateFormInputs(formID) {
 
     for (const child of $(formID).children(".active")) {        
         formInput[formID.replace('#', '')] += child.value + " ";
-        console.log(projectName, projectDescription, formInput.tags, formInput.goal, formInput.player, formInput.motivations);
     }
 
     return $(formID).children(".active").length;
