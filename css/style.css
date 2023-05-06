@@ -1112,6 +1112,10 @@ input:focus, textarea:focus {
     background-color: #eee;
 }
 
+.preview-window::-webkit-scrollbar{
+    display: none;
+}
+
 .preview-bar {
     height: 16px;
     background-color: #ddd;
@@ -1195,7 +1199,7 @@ input:focus, textarea:focus {
 
 .project-info {
     border-left: 1px solid #111;
-    width: auto;
+    width: 100%;
 
     overflow-y: scroll;
 }
@@ -1387,7 +1391,7 @@ input:focus, textarea:focus {
 }
 
 .submit-button {
-    width: fit-content;
+    width: 96px;
     margin-left: auto;
     margin-right: auto;
     padding: 4px 32px 8px 28px;
