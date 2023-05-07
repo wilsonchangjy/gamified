@@ -83,7 +83,7 @@ function formManager() {
     }
     // Project Goals
     else if (currentIndex == 4) {      
-        verifySelection(updateFormInputs("#goal"));
+        verifySelection(updateFormInputs("#goal"), 1);
   
         toggleButton("back", false);
         $(".progress-bar").toggleClass("active", true);
@@ -94,13 +94,13 @@ function formManager() {
 
         for (const child of goalInputs.children) {
             child.addEventListener('click', () => {
-                verifySelection(updateFormInputs("#goal"));
+                verifySelection(updateFormInputs("#goal"), 1);
             });
         }
     }
     // Player Types
     else if (currentIndex == 5) {
-        verifySelection(updateFormInputs("#player"));
+        verifySelection(updateFormInputs("#player"), 1);
 
         toggleButton("back", false);
         $(".progress-bar").toggleClass("active", true);
@@ -111,13 +111,13 @@ function formManager() {
 
         for (const child of playerInputs.children) {
             child.addEventListener('click', () => {
-                verifySelection(updateFormInputs("#player"));
+                verifySelection(updateFormInputs("#player"), 1);
             });
         }
     }
     // Player Motivations
     else if (currentIndex == 6) {  
-        verifySelection(updateFormInputs("#motivations"));
+        verifySelection(updateFormInputs("#motivations"), 4);
 
         toggleButton("back", false);
         $(".progress-bar").toggleClass("active", true);
@@ -128,7 +128,7 @@ function formManager() {
 
         for (const child of motivationsInput.children) {
             child.addEventListener('click', () => {
-                verifySelection(updateFormInputs("#motivations"));
+                verifySelection(updateFormInputs("#motivations"), 4);
             });
         }
     }
@@ -219,8 +219,8 @@ function verifyDetails() {
     }
 }
 
-function verifySelection(selectedCount) {
-    if (selectedCount < 1) {
+function verifySelection(selectedCount, limit) {
+    if (selectedCount < limit) {
         toggleButton("next", true);
     }
     else {
