@@ -897,6 +897,7 @@ input:focus, textarea:focus {
 }
 
 #name {
+    margin-top: 16px;
     height: 36px;
 }
 
@@ -1091,8 +1092,7 @@ input:focus, textarea:focus {
 
 /* Breakdown */
 .breakdown-landing {
-    height: 87.5vh;
-    border-bottom: 1px solid #111;
+    height: 75vh;
 }
 
 .breakdown-back {
@@ -1267,6 +1267,14 @@ input:focus, textarea:focus {
 
     border-color: #49B6FF;
     color: #49B6FF;
+}
+
+.scroll-prompt {
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 32px;
+
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .feedback-item:hover {
