@@ -445,7 +445,7 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-.gallery-card:hover h4 {
+.gallery-card:hover h4, .gallery-card:hover p, .gallery-card:hover h5 {
     color: #02C39A;
 }
 
