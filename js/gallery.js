@@ -34,6 +34,7 @@ async function initialiseGallery() {
         listItem.setAttribute("href", "gallery-single.html");
         listItem.innerHTML = `
         <img src="images/default.jpg">
+        <div class="gallery-filter"></div>
         <h4>${name}</h4>
         <p class="card-text">${description}</p>
         <h5>${newTags.slice(0, -2)}</h5>
