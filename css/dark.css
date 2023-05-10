@@ -1,0 +1,211 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #2B303A;
+    }
+
+    h2, h4, h5 {
+        color: #fff;
+    }
+
+    p {
+        color: #ccc;
+    }
+
+    a, a:visited {
+        color: #ddd;
+    }
+
+    nav {
+        background-color: #2B303A;
+        border-color: #888;
+    }
+
+    nav a, nav a:visited {
+        color: #ddd;
+    }
+
+    .footer, .footer-item {
+        border-color: #888;
+    }
+
+    .footer a, .footer a:visited {
+        color: #ddd;
+    }
+
+    .cta-button {
+        color: #111;
+    }
+
+    .running-bar {
+        background-color: #645DD7;
+        border-color: #888;
+    }
+
+    .about-intro {
+        border-color: #888;
+    }
+
+    .grid-4, .gallery-title, .gallery-card {
+        border-color: #888;
+    }
+
+    .gallery-card h4 {
+        color: #fff;
+    }
+
+    .gallery-card h5 {
+        color: #ccc;
+    }
+
+    .chat-circle {
+        color: #ccc;
+    }
+
+    .chat-interface {
+        background-color: #2B303A;
+        color: #fff;
+        border-color: #888;
+    }
+
+    .chat-close {
+        background-color: #2B303A;
+        border-color: #fff;
+    }
+
+    .slider-toggle {
+        background-color: #2B303A;
+        border-color: #888;
+    }
+
+    .slider-toggle:before {
+        background-color: #444;
+        border-color: #888;
+    }
+
+    .chat-top, .chat-bottom, #chat-input, .chat-send {
+        border-color: #888;
+    }
+
+    .chat-send, #chat-input {
+        color: #fff;
+        background-color: #2B303A;
+    }
+
+    .chat-send:hover {
+        background-color: #2B303A;
+    }
+
+    .response-message {
+        color: #fff;
+        background-color: #888;
+    }
+
+    .tooltip-icon {
+        color: #fff;
+        border-color: #fff;
+        background-color: #2B303A;
+    }
+
+    .tooltip-container, .tooltip-container.active {
+        background-color: #2B303A;
+        border-color: #888;
+    }
+
+    .back-button, .next-button, .yes-button, .no-button, .submit-button, .back-top {
+        background: #2B303A;
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .back-button a:visited, .next-button a:visited{
+        color: #fff;
+    }
+
+    .back-button:hover a, .next-button:hover a{
+        color: #02C39A;
+    }
+
+    .back-button.inactive, .next-button.inactive {
+        color: #ddd;
+    }
+
+    #project-details input, #project-details textarea {
+        background-color: #2B303A;
+        color: #ccc;
+        border-color: #fff;
+    }
+
+    .select-option {
+        color: #fff;
+        background-color: #2B303A;
+        border-color: #fff;
+    }
+
+    .progress-bar p {
+        color: #444;
+    }
+
+    .progress-item, .progress-item::after {
+        background-color: #444;
+    }
+
+    .progress-bar p.active {
+        color: #fff;
+    }
+
+    .progress-item.active, .progress-item.active::after {
+        background-color: #fff;
+    }
+
+    .drag-number {
+        color: #fff;
+    }
+
+    .drag-item {
+        color: #fff;
+        background-color: #2B303A;
+        border-color: #fff;
+    }
+
+    .preview-window {
+        background-color: #444;
+    }
+
+    .preview-bar {
+        background-color: #333;
+    }
+
+    .project-name, .project-info, .tags-class {
+        border-color: #888;
+    }
+
+    .elements-field h4 {
+        color: #fff;
+    }
+
+    .element-item {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: #fff;
+    }
+
+    .scroll-prompt {
+        color: #ccc;
+    }
+
+    .breakdown-karma, .breakdown-body, .breakdown-suggestion, .breakdown-cards, .suggestion-intro {
+        border-color: #888;
+    }
+
+    .submit-button.active {
+        color: #fff;
+    }
+
+    .submit-button:hover i, .submit-button:hover {
+        color: #02C39A;
+    }
+
+    .pagination li a {
+        color: #ccc;
+    }
+}

@@ -218,7 +218,7 @@ input:focus, textarea:focus {
 /* Pages */
 
 .form-area {
-    height: 100vh;
+    height: calc(100vh + 103px);
     display: flex;
     flex-direction: row;
 }
@@ -271,8 +271,10 @@ input:focus, textarea:focus {
     right: -64px;
     top: 103px;
     width: 0%;
+    height: calc(100% - 167px);
     padding: 32px 0;
     background-color: #fff;
+    border-left: 0px solid #111;
 
     transition: 0.5s ease;
 }
@@ -386,7 +388,6 @@ input:focus, textarea:focus {
 
 .footer {
     display: grid;
-    background-color: #fff;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     border-top: 1px solid #111;
     height: 120px;
@@ -475,16 +476,35 @@ input:focus, textarea:focus {
     border-bottom: 1px solid #111;
 }
 
+.gallery-filter {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.gallery-content .gallery-card:hover img {
+    -webkit-filter: grayscale(100%) contrast(150%);
+    filter: grayscale(100%) contrast(150%);
+    opacity: 1;
+}
+
+.gallery-content .gallery-card:hover div {
+    mix-blend-mode: screen;
+    background-color: #02C39A;
+}
 #duolingo:hover {
-    content: url("/images/duolingoChart.png");
+    content: url("/images/duolingoAvatar.jpg");
 }
 
 #shopee:hover {
-    content: url("/images/shopeeChart.png");
+    content: url("/images/shopeeAvatar.jpg");
 }
 
 #uber:hover {
-    content: url("/images/uberChart.png");
+    content: url("/images/uberAvatar.jpg");
 }
 
 .gallery-card h4 {
@@ -728,6 +748,10 @@ input:focus, textarea:focus {
     text-decoration: none;
 }
 
+.pagination li a:hover {
+    color: #02C39A;
+}
+
 .pagination li.active {
     text-decoration: underline;
     pointer-events: none;
@@ -962,7 +986,6 @@ input:focus, textarea:focus {
 }
 
 /* Progress Bar */
-
 .progress-bar {
     position: relative;
     top: 0em;
@@ -1069,6 +1092,7 @@ input:focus, textarea:focus {
 .drag-number {
     margin-top: 4px;
     text-align: center;
+    color: #111;
 
     font-size: 24px;
     font-family: "synthese", sans-serif;
@@ -1630,6 +1654,7 @@ input:focus, textarea:focus {
     left: 336px;
     bottom: 32px;
     border: 2px solid #111;
+    background-color: #fff;
     border-radius: 50px;
     padding: 24px;
     font-size: 28px;
@@ -1649,7 +1674,6 @@ input:focus, textarea:focus {
     opacity: 1;
     pointer-events: all;
     cursor: pointer;
-    background-color: #fff;
     left: 336px;
     z-index: 99;
 }
@@ -1792,6 +1816,7 @@ input:checked + .slider-toggle:before {
 
 .user-message, .response-message {
     padding: 8px;
+    padding-top: 6px;
     border-radius: 10px;
     width: fit-content;
 }
@@ -1856,4 +1881,9 @@ input:checked + .slider-toggle:before {
 
 .about-text a:hover {
     color: #02C39A;
+}
+
+.easter-egg {
+    padding: 0 32px;
+    padding-top: 136px;
 }
