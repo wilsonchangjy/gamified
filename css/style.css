@@ -15,7 +15,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid #111;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 99;
 
@@ -124,6 +125,11 @@ input:focus, textarea:focus {
 }
 
 /* Menu */
+.menu {
+    position: relative;
+    right: 64px;
+}
+
 .menu ul {
     display: flex;
     flex-direction: row;
@@ -147,13 +153,13 @@ input:focus, textarea:focus {
 /* Homepage */
 
 .landing-area {
-    height: 92.55vh;
+    height: 100vh;
 }
 
 .landing-area spline-viewer {
     display: block;
     position: absolute;
-    height: 92.5vh;
+    height: calc(100vh - 103px);
     top: 103px;
     z-index: 0;
 }
@@ -161,7 +167,7 @@ input:focus, textarea:focus {
 .big-title {
     color: #111;
     position: relative;
-    top: 50%;
+    top: calc(50% + 55px);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -263,6 +269,7 @@ input:focus, textarea:focus {
 .tooltip-container {
     position: relative;
     right: -64px;
+    top: 103px;
     width: 0%;
     padding: 32px 0;
     background-color: #fff;
@@ -312,11 +319,11 @@ input:focus, textarea:focus {
 
 .form-box {
     position: absolute;
-    margin: 64px 0;
+    margin-top: 64px;
     padding: 32px;
     width: 50%;
     height: auto;
-    top: 0;
+    top: 103px;
     left: 50%;
     transform: translate(-50%, 0px);
 
@@ -411,6 +418,10 @@ input:focus, textarea:focus {
 }
 
 /* Gallery */
+.gallery-box {
+    margin-top: 103px;
+}
+
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1092,7 +1103,8 @@ input:focus, textarea:focus {
 
 /* Breakdown */
 .breakdown-landing {
-    height: 75vh;
+    height: calc(100vh - 136px);
+    padding-top: 136px;
 }
 
 .breakdown-back {
@@ -1101,10 +1113,9 @@ input:focus, textarea:focus {
 
 .preview-window {
     position: relative;
-    margin: 5vh 0;
-    height: 95%;
-    width: 95%;
+    height: 92%;
     left: 50%;
+    width: calc(100% - 64px);;
     transform: translate(-50%, 0px);
     overflow: hidden;
 
@@ -1270,10 +1281,9 @@ input:focus, textarea:focus {
 }
 
 .scroll-prompt {
-    justify-self: center;
+    height: 8%;
+    padding: 16px 0;
     text-align: center;
-    padding-bottom: 32px;
-
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1337,6 +1347,10 @@ input:focus, textarea:focus {
 
 .suggestion-intro h1 {
     padding: 20vh 32px;
+}
+
+.suggestion-intro p, .suggestion-intro h1 {
+    color: #fff;
 }
 
 .suggestion-field {
@@ -1820,7 +1834,8 @@ input:checked + .slider-toggle:before {
 
 /* About Page */
 .text-box {
-    min-height: 92.5vh;
+    padding-top: 103px;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
