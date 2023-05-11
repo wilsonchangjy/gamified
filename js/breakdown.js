@@ -13,6 +13,7 @@ var elementArray = [];
 var keyElementArray = [];
 var secondaryElementArray = [];
 var supportingElementArray = [];
+var tempElementArray = [];
 var dataArray = [];
 var concensus;
 
@@ -87,30 +88,39 @@ async function assignElements() {
         const requirementScore = ((i + 1) * 100 / motivationArray.length);
 
         const priorityLimit = motivationArray.length - i;
-        var shortlist = 0;
 
         for (var child in elements) {
             const grandChild = elements[child];
 
-            if (grandChild[requirement] >= requirementScore && grandChild[player.trim()] == 100 && grandChild[goal.trim()] == 100) {
+            if (grandChild[requirement] >= requirementScore && grandChild[player.trim()] >= 100 && grandChild[goal.trim()] >= 100) {
                 createElement(grandChild, "key");
                 elementArray.push(grandChild);
                 keyElementArray.push(grandChild);
                 delete elements[child];
             }
-            else if (grandChild[requirement] >= requirementScore && grandChild[player.trim()] == 100) {
+            else if (grandChild[requirement] >= requirementScore && grandChild[player.trim()] >= 100) {
                 createElement(grandChild, "secondary");
                 elementArray.push(grandChild);
                 secondaryElementArray.push(grandChild);
                 delete elements[child];
             }
-            else if (grandChild[requirement] >= requirementScore && shortlist < priorityLimit) {
-                createElement(grandChild, "supporting");
-                elementArray.push(grandChild);
-                supportingElementArray.push(grandChild);
+            else if (grandChild[requirement] >= requirementScore) {
+                tempElementArray.push(grandChild);
                 delete elements[child];
+            }
+        }
 
-                shortlist += 1;
+        let sortedArray = tempElementArray.sort(
+            (a, b) => (a[requirement] < b[requirement]) ? 1 : (a[requirement] > b[requirement]) ? -1 : 0
+        );
+
+        for (var j = 0; j < priorityLimit; j++) {
+            const child = sortedArray[j];
+
+            if (child != null) {
+                createElement(child, "supporting");
+                elementArray.push(child);
+                supportingElementArray.push(child);
             }
         }
     }
@@ -268,14 +278,14 @@ function updateAffinity() {
 
                     if (concensus && (element[motivation] >= 0 && element[motivation] <= 99)) {
                         const newValue = element[motivation] + increment;
-                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(/\s+/g, "").toLowerCase();
+                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(" (XP)", "").replace(/\s+/g, "").toLowerCase();
 
                         console.log(elementID + motivation + newValue);
                         writeAffinityData(elementID, motivation, newValue);
                     }
                     else if (!concensus && (element[motivation] >= 1 && element[motivation] <= 100)) {
                         const newValue = element[motivation] - increment;
-                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(/\s+/g, "").toLowerCase();
+                        const elementID = element.name.replace("/", "").replace(" & ", "").replace("-", "").replace(" (XP)", "").replace(/\s+/g, "").toLowerCase();
 
                         console.log(elementID + motivation + newValue);
                         writeAffinityData(elementID, motivation, newValue);
