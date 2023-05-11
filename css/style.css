@@ -1613,6 +1613,10 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
+.chat-icon:hover .chat-circle {
+    color: #49B6FF;
+}
+
 .chat-icon p {
     font-size: 64px;
     margin: 0;
@@ -1681,8 +1685,8 @@ input:focus, textarea:focus {
 .chat-close:hover {
     transform: rotate(-7.5deg);
     transition: 0.3s ease;
-    color: #02C39A;
-    border: 2px solid #02C39A;
+    color: #49B6FF;
+    border: 2px solid #49B6FF;
 }
 
 .chat-interface {
