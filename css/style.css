@@ -104,6 +104,10 @@ a, a:visited {
     color: #111;
 }
 
+a:hover {
+    color: #02C39A;
+}
+
 .form-box div h2{
     margin-bottom: 32px;
 }
