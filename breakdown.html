@@ -13,18 +13,11 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred"></script>
         <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.321/build/spline-viewer.js"></script>
+        <script src="js/csi.min.js"></script>
     </head>
     <body>
         <section class="content"> 
-            <nav>
-                <a href="index.html">GAMIFIED.</a>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div data-include="header.html"></div>
             <div class="breakdown-box">
                 <div class="breakdown-landing">
                     <div class="preview-window">
@@ -49,12 +42,13 @@
                                     <div class="key-elements"><h4>Key Elements:</h4></div>
                                     <div class="secondary-elements"><h4>Secondary Elements:</h4></div>
                                     <div class="supporting-elements"><h4>Supporting Elements:</h4></div>
-                                    <br>
+                                </div>
+                                <div class="elements-extra">
                                     <p>Click on an element to find out more!</p>
                                     <br>
                                     <p><b><i>Key Elements</i></b> refer to suggested gamification elements that are most applicable to your project's requirements, and <b><i>Secondary Elements</i></b> are those that will bolster the core gamification experience, while <b><i>Supporting Elements</i></b> feature in a minor role but should still be considered to provide variety and dynamics.</p>
                                     <br>
-                                    <p><b><u>Disclaimer:</u></b> The suggested gamification elements are referenced from Marczewski's <a href="https://www.gamified.uk/user-types/gamification-mechanics-elements/">Periodic Table of Gamification Elements</a>.</p>
+                                    <p><b><u>Disclaimer:</u></b> The suggested gamification elements are referenced from Marczewski's <a href="https://www.gamified.uk/user-types/gamification-mechanics-elements/" target="_blank">Periodic Table of Gamification Elements</a>.</p>
                                     <br>
                                 </div>
                             </div>
@@ -75,7 +69,7 @@
                     <div class="breakdown-karma">
                         <h4>Karma Rating: <span id="karma">...</span></h4>
                         <p id="karma-description">Generating verdict...</p>
-                        <p><b><u>Disclaimer:</u></b> This rating system is based on the <a href="https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/">Octalysis framework</a>, analysing the suggested gamification elements and features recommended to you based on your selected goals, player type and motivations.</p>
+                        <p><b><u>Disclaimer:</u></b> This rating system is based on the <a href="https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/" target="_blank">Octalysis framework</a>, analysing the suggested gamification elements and features recommended to you based on your selected goals, player type and motivations.</p>
                         <br>
                         <p><i>"White Hat" core drives/motivations refer to Epic Calling & Meaning, Empowerment of Creativity & Feedback, Development & Accomplishment, while "Black Hat" core drives/motivations refer to Scarcity & Impatience, Loss & Avoidance, Unpredictability & Curiosity.</i></p>
                         <br>
@@ -184,22 +178,7 @@
             </div>
         </section>
         <section class="footer">
-            <div class="footer-item">
-                <p>Gamified.fun</p>
-                <p>Version 1.1</p>
-            </div>
-            <div class="footer-item">
-                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="footer-item footer-last">
-                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
-            </div>
+            <div data-include="footer.html"></div>
         </section>
 
         <script src="js/menu.js"></script>

@@ -10,18 +10,11 @@
         <link rel="stylesheet" href="css/dark.css">
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
+        <script src="js/csi.min.js"></script>
     </head>
     <body>
         <section class="content"> 
-            <nav>
-                <a href="index.html">GAMIFIED.</a>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div data-include="header.html"></div>
             <div class="form-area">
                 <div class="tooltip-icon">
                     <i class="fa-solid fa-question"></i>
@@ -266,22 +259,7 @@
             </div>
         </section>
         <section class="footer">
-            <div class="footer-item">
-                <p>Gamified.fun</p>
-                <p>Version 1.1</p>
-            </div>
-            <div class="footer-item">
-                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="footer-item footer-last">
-                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
-            </div>
+            <div data-include="footer.html"></div>
         </section>
 
         <script type="module" src="js/firebase.js"></script>

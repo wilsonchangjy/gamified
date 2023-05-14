@@ -11,25 +11,18 @@
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.321/build/spline-viewer.js"></script>
+        <script src="js/csi.min.js"></script>
     </head>
     <body>
         <section class="content"> 
-            <nav>
-                <a href="index.html">GAMIFIED.</a>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div data-include="header.html"></div>
             <div class="landing-area">
                 <div class="big-title">
                     <h1>Fun is just one click away</h1>
                     <h5>Discover the endless possibilities of bringing gamification to your project.</h5>
                     <a href="form.html" class="cta-button"><i class="fa-solid fa-arrow-right"></i>Get Started</a>
                 </div>
-                <spline-viewer loading-anim url="https://prod.spline.design/i0NSEl-Xcqr5wsB7/scene.splinecode"></spline-viewer>
+                <spline-viewer loading-anim url="https://prod.spline.design/i0NSEl-Xcqr5wsB7/scene.splinecode" id="landing-spline"></spline-viewer>
             </div>
             <div class="running-bar">
                 <p class="running-text">"Playing a game is the voluntary attempt to overcome unnecessary obstacles." — Jane McGonigal, <a href="https://janemcgonigal.com/my-book/" target="_blank">Reality is Broken</a> &#128218;
@@ -39,22 +32,7 @@
             </div>
         </section>
         <section class="footer">
-            <div class="footer-item">
-                <p>Gamified.fun</p>
-                <p>Version 1.1</p>
-            </div>
-            <div class="footer-item">
-                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="footer-item footer-last">
-                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
-            </div>
+            <div data-include="footer.html"></div>
         </section>
         
         <script src="js/interact.js"></script>

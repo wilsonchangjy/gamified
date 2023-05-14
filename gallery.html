@@ -10,38 +10,31 @@
         <link rel="stylesheet" href="css/dark.css">
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script src="https://kit.fontawesome.com/2ce686aa38.js" crossorigin="anonymous"></script>
+        <script src="js/csi.min.js"></script>
     </head>
     <body>
         <section class="content">
-            <nav>
-                <a href="index.html">GAMIFIED.</a>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div data-include="header.html"></div>
             <div class="gallery-box">
                 <div class="gallery-title">
                     <h5>Case Studies</h5>
                 </div>
                 <div class="case-studies">
                     <div class="grid-3">
-                        <a class="gallery-card" href="duolingo.html">
-                            <img src="images/duolingo.jpg" id="duolingo">
+                        <a class="gallery-card" href="duolingo.html" id="duolingo">
+                            <img src="images/duolingo.jpg">
                             <h4>Duolingo</h4>
                             <p class="card-text">Learn a new language with the world's most-downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.</p>
                             <h5>Education, Social Networking, Technology</h5>
                         </a>
-                        <a class="gallery-card" href="shopee.html">
-                            <img src="images/shopee.jpg" id="shopee">
+                        <a class="gallery-card" href="shopee.html" id="shopee">
+                            <img src="images/shopee.jpg">
                             <h4>Shopee</h4>
                             <p class="card-text">Shopee is the leading e-commerce platform in Southeast Asia and Taiwan. It is a platform tailored for the region, providing customers with an easy, secure and fast online shopping experience through strong payment and logistical support.</p>
                             <h5>E-commerce, Service, Technology</h5>
                         </a>
-                        <a class="gallery-card gallery-last" href="uber.html">
-                            <img src="images/uber.jpg" id="uber">
+                        <a class="gallery-card gallery-last" href="uber.html" id="uber">
+                            <img src="images/uber.jpg">
                             <h4>Uber</h4>
                             <p class="card-text">The Uber app gives you the power to get where you want to go with access to different types of rides across more than 10,000 cities. Uber is a platform where those who drive and deliver can connect with riders, eaters, and restaurants. In cities where Uber is available, you can use the Uber app to request a ride.</p>
                             <h5>Lifestyle, Service, Transport, Technology</h5>
@@ -67,22 +60,7 @@
             </div>
         </section>
         <section class="footer">
-            <div class="footer-item">
-                <p>Gamified.fun</p>
-                <p>Version 1.1</p>
-            </div>
-            <div class="footer-item">
-                <p><b>Gamified.</b> is a web project dedicated to providing designers with harnessing the knowledge and tools of implementing gamification into their projects.</p>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="footer-item footer-last">
-                <p>Copyright &copy; 2023 <a href="https://wilsonchangjy.super.site" target="_blank">Wilson C</a></p>
-            </div>
+            <div data-include="footer.html"></div>
         </section>
 
         <script src="js/menu.js"></script>
