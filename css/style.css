@@ -1782,7 +1782,7 @@ input:checked + .slider-toggle:before {
     bottom: 0;
     padding: 16px;
     min-height: 30vh;
-    max-height: calc(100vh - 288px);
+    max-height: calc(100vh - 286px);
     display: flex;
     flex-direction: column;
     gap: 8px;
