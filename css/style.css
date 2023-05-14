@@ -499,15 +499,16 @@ input:focus, textarea:focus {
     mix-blend-mode: screen;
     background-color: #02C39A;
 }
-#duolingo:hover {
+
+#duolingo:hover img {
     content: url("/images/duolingoAvatar.jpg");
 }
 
-#shopee:hover {
+#shopee:hover img {
     content: url("/images/shopeeAvatar.jpg");
 }
 
-#uber:hover {
+#uber:hover img {
     content: url("/images/uberAvatar.jpg");
 }
 
@@ -1268,7 +1269,7 @@ input:focus, textarea:focus {
 }
 
 .elements-field {
-    padding: 16px 32px 32px 32px;
+    padding: 16px 32px;
     list-style: none;
     height: fit-content;
 }
@@ -1326,6 +1327,11 @@ input:focus, textarea:focus {
     border: 2px solid #02C39A;
     background-color: #02C39A;
     color: #fff;
+}
+
+.elements-extra {
+    padding: 32px;
+    padding-top: 0;
 }
 
 .breakdown-body {
@@ -1442,6 +1448,7 @@ input:focus, textarea:focus {
 
 .submit-button {
     width: 96px;
+    margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
     padding: 4px 32px 8px 28px;
@@ -1524,7 +1531,7 @@ input:focus, textarea:focus {
 .card-item {
     position: absolute;
     top: 0;
-    left: 40%;
+    left: calc(50% - 144px);
     background-color: #ddd;
     width: 256px;
     height: 320px;
@@ -1775,7 +1782,7 @@ input:checked + .slider-toggle:before {
     bottom: 0;
     padding: 16px;
     min-height: 30vh;
-    max-height: 63vh;
+    max-height: calc(100vh - 288px);
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -1868,7 +1875,7 @@ input:checked + .slider-toggle:before {
 /* About Page */
 .text-box {
     padding-top: 103px;
-    min-height: 100vh;
+    min-height: calc(100vh - 103px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }

@@ -32,7 +32,11 @@
         color: #ddd;
     }
 
-    .cta-button {
+    .big-title h1, .big-title h5 {
+        color: #fff;
+    }
+
+    .big-title a {
         color: #111;
     }
 
