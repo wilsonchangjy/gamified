@@ -1,3 +1,11 @@
+// Dark Mode Landing Spline
+const landingSpline = $("#landing-spline");
+const check = $("html").css("background-color");
+
+if (landingSpline != null && check == "rgb(43, 48, 58)") {
+    landingSpline.attr("url", "https://prod.spline.design/cwdXJRu-YUg0QvWd/scene.splinecode");
+}
+
 // Running Text
 const runningText = document.querySelector(".running-text");
 var style = document.createElement("style");
@@ -11,7 +19,7 @@ if (runningText != null) {
     }`;
     
     document.head.append(style);
-}
+} 
 
 // Tooltip
 const tooltip = $(".tooltip-container");
