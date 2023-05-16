@@ -1,6 +1,7 @@
 import { getAnswerFromChatGPT } from "./openAI.js";
 
 // Variables
+var labelColour = "#111111";
 var graphColour = "";
 var graphColourOpacity = "";
 const octalysisChart = document.getElementsByClassName('octalysis');
@@ -8,6 +9,13 @@ const octalysisChart = document.getElementsByClassName('octalysis');
 Chart.register(ChartDeferred);
 Chart.defaults.font.size = 12;
 Chart.defaults.font.family = "synthese";
+
+const breakdownChart = $(".breakdown-chart");
+const check = $("html").css("background-color");
+
+if (breakdownChart != null && check == "rgb(43, 48, 58)") {
+    labelColour = "#ffffff";
+}
 
 var data = {
     labels: [
@@ -41,7 +49,7 @@ const options = {
                 display: false
             },
             pointLabels: {
-                color: "#111111",
+                color: labelColour,
                 font: {
                     family: "synthese",
                     size: 20,
