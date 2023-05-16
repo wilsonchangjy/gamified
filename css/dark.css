@@ -24,6 +24,10 @@
         color: #ddd;
     }
 
+    .menu ul li a, .menu ul li a:visited {
+        color: #ddd;
+    }
+
     .footer, .footer-item {
         border-color: #888;
     }
@@ -211,5 +215,6 @@
 
     .pagination li a {
         color: #ccc;
+        text-decoration: none;
     }
 }
