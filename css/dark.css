@@ -36,6 +36,10 @@
         color: #ddd;
     }
 
+    .menu ul li a:hover, .footer-item p a:hover {
+        color: #02C39A;
+    }
+
     .big-title h1, .big-title h5 {
         color: #fff;
     }
