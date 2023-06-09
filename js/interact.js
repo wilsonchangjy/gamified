@@ -1,8 +1,8 @@
 // Dark Mode Landing Spline
 const landingSpline = $("#landing-spline");
-const check = $("html").css("background-color");
+const checkDark = $("html").css("background-color");
 
-if (landingSpline != null && check == "rgb(43, 48, 58)") {
+if (landingSpline != null && checkDark == "rgb(43, 48, 58)") {
     landingSpline.attr("url", "https://prod.spline.design/cwdXJRu-YUg0QvWd/scene.splinecode");
 }
 

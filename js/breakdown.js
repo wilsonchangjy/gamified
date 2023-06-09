@@ -26,8 +26,6 @@ async function initaliseBreakdown() {
 
     console.log("Reading data from: " + projectID);
     setProjectData(firebaseData);
-
-    //$("#character").attr("url", "https://prod.spline.design/i0NSEl-Xcqr5wsB7/scene.splinecode");
 }
 
 const feedback = document.querySelector(".breakdown-feedback");
@@ -77,6 +75,73 @@ function populatePage() {
 
         replaceItem.textContent = newTags.slice(0, -2);
     });
+}
+
+function assignCharacter() {
+    const race = goal.trim();
+    const archetype = player.trim();
+
+    if (race.trim() == "engagement") {
+        if (archetype == "socialiser"){
+            $("#character").attr("url", "https://prod.spline.design/PisfrBdLTKxNf6n2/scene.splinecode");
+        }
+        else if (archetype == "free") {
+            $("#character").attr("url", "https://prod.spline.design/hqjzvuGE18MXkcDi/scene.splinecode");
+        }
+        else if (archetype == "achiever") {
+            $("#character").attr("url", "https://prod.spline.design/HD508SZUTKcuq4k2/scene.splinecode");
+        }
+        else if (archetype == "philanthropist") {
+            $("#character").attr("url", "https://prod.spline.design/dBI9aBEjf3QkuGb5/scene.splinecode");
+        }
+        else if (archetype == "disruptor") {
+            $("#character").attr("url", "https://prod.spline.design/DuHBoLdt8ew3QED4/scene.splinecode");
+        }
+        else if (archetype == "player") {
+            $("#character").attr("url", "https://prod.spline.design/kh2fx-BTXk2LsdXf/scene.splinecode");
+        }
+    }
+    else if (race == "behaviour") {
+        if (archetype == "socialiser"){
+            $("#character").attr("url", "https://prod.spline.design/HLn2T-0UOAh997rp/scene.splinecode");
+        }
+        else if (archetype == "free") {
+            $("#character").attr("url", "https://prod.spline.design/jkgkxxcPGWhgwAkg/scene.splinecode");
+        }
+        else if (archetype == "achiever") {
+            $("#character").attr("url", "https://prod.spline.design/rjezVRPCM8m0AmVH/scene.splinecode");
+        }
+        else if (archetype == "philanthropist") {
+            $("#character").attr("url", "https://prod.spline.design/OdNgeTbmiAEEwc9l/scene.splinecode");
+        }
+        else if (archetype == "disruptor") {
+            console.log("Orc Rogue");
+            $("#character").attr("url", "https://prod.spline.design/IhY9dK4nzTYsIY2V/scene.splinecode");
+        }
+        else if (archetype == "player") {
+            $("#character").attr("url", "https://prod.spline.design/4oTHyh-qnmMiBnDt/scene.splinecode");
+        }    
+    }
+    else if (race == "learning") {
+        if (archetype == "socialiser"){
+            $("#character").attr("url", "https://prod.spline.design/yrg2b5ziNHwZOgg5/scene.splinecode");
+        }
+        else if (archetype == "free") {
+            $("#character").attr("url", "https://prod.spline.design/J0QKI5owjQh1RxuD/scene.splinecode");
+        }
+        else if (archetype == "achiever") {
+            $("#character").attr("url", "https://prod.spline.design/xYOinsJ6ZpXSIaja/scene.splinecode");
+        }
+        else if (archetype == "philanthropist") {
+            $("#character").attr("url", "https://prod.spline.design/YpgQ8WZIMFuVJZAo/scene.splinecode");
+        }
+        else if (archetype == "disruptor") {
+            $("#character").attr("url", "https://prod.spline.design/qgyL-Lwu6gsLPFiU/scene.splinecode");
+        }
+        else if (archetype == "player") {
+            $("#character").attr("url", "https://prod.spline.design/sEYvRzZkZhDltY92/scene.splinecode");
+        } 
+    }
 }
 
 async function assignElements() {
@@ -317,6 +382,7 @@ export function setProjectData(incoming) {
     player = projectData.playerType;
     motivations = projectData.playerMotivations;
 
+    assignCharacter();
     populatePage();
     assignElements();
     calculateOctalysis();

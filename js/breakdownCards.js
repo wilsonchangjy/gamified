@@ -2,8 +2,17 @@
 var cardArray = $(".card-item");
 var currentIndex;
 var colorArray = ["#49B6FF", "#DA3E52", "#645DD7", "#02C39A", "#E6AF2E"];
+var cardMovement = "150%";
 const backButton = document.querySelector("#cards-back");
 const nextButton = document.querySelector("#cards-next");
+
+// Initialise
+const checkMobile = $(".footer").css("display");
+
+if (checkMobile == "flex") {
+    cardMovement = "0%";
+    console.log("mobile");
+}
 
 // Functions
 function initaliseButtons() {
@@ -38,7 +47,7 @@ function changeStep(newIndex) {
     else {
         cardArray[currentIndex].classList.remove("active")
         cardArray[currentIndex].classList.add("inactive");
-        cardArray[currentIndex].style.transform = "translateX(150%)";
+        cardArray[currentIndex].style.transform = `translateX(${cardMovement})`;
         colorArray.push(cardArray[currentIndex].style.backgroundColor);
     }
 

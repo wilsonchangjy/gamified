@@ -2,12 +2,20 @@ import { getGallery } from "./firebase.js";
 
 // Variables
 var tagArray = { ecommerce: "E-Commerce", education: "Education", entertainment: "Entertainment", foodbeverage: "Food & Beverage", finance: "Finance", healthcare: "Healthcare", lifestyle: "Lifestyle", nonprofit: "Non-profit", personal: "Personal", productivity: "Productivity", service: "Service", socialnetworking: "Social Networking", technology: "Technology", transport: "Transport", utility: "Utility" };
+var limitPerPage = 12; //number of cards per page
+var paginationSize = 5; //number of pagination elements visible
 
 // Initialise
 const gallery = document.querySelector(".gallery-content");
+const checkMobile = $(".footer").css("display");
 
 if (gallery != null) {
     gallery.addEventListener("load", initialiseGallery());
+
+    if (checkMobile == "flex") {
+        limitPerPage = 6;
+        paginationSize = 3;
+    }
 }
 
 // Gallery 
@@ -19,6 +27,8 @@ async function initialiseGallery() {
         const grandChild = galleryContent[child];
         const name = grandChild.projectName;
         const description = grandChild.projectDescription;
+        const goal = grandChild.projectGoal;
+        const player = grandChild.playerType;
 
         var tags = grandChild.projectTags.trim().split(" ");
         var newTags = "";
@@ -33,7 +43,7 @@ async function initialiseGallery() {
         listItem.setAttribute("id", child);
         listItem.setAttribute("href", "gallery-single.html");
         listItem.innerHTML = `
-        <img src="images/default.jpg">
+        <img src="images/${goal.trim() + player.trim()}.jpg">
         <div class="gallery-filter"></div>
         <h4>${name}</h4>
         <p class="card-text">${description}</p>
@@ -52,9 +62,7 @@ async function initialiseGallery() {
 
 function constructGallery() {
     var numberOfItems = $(".gallery-content .gallery-card").length;
-    var limitPerPage = 12; //number of cards per page
     var totalPages = Math.ceil(numberOfItems / limitPerPage);
-    var paginationSize = 5; //number of pagination elements visible
     var currentPage;
 
     function showPage(whichPage){

@@ -1,0 +1,251 @@
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 16px;
+    }
+
+    .menu {
+        right: 32px;
+    }
+
+    .landing-area spline-viewer {
+        height: calc(100vh - 72px);
+        top: 72px;
+    }
+
+    .big-title h1 {
+        font-size: 8vh;
+        line-height: 10vh;
+    }
+
+    .text-box {
+        padding-top: 72px;
+        min-height: calc(100vh - 72px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-intro {
+        border-right: none;
+        border-bottom: 1px solid #111;
+    }
+
+    .about-text {
+        padding: 24px 16px;
+    }
+
+    .gallery-box {
+        margin-top: 72px;
+    }
+
+    .gallery-title {
+        padding: 16px;
+    }
+
+    .grid-3, .grid-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-card {
+        border-right: none;
+        border-bottom: 1px solid #111;
+    }
+
+    .gallery-card img, .gallery-filter {
+        height: 25vh;
+    }
+
+    .gallery-card h4, .gallery-card p, .gallery-card h5 {
+        margin: 8px 16px 16px 16px;
+    }
+
+    .gallery-card p {
+        width: auto;
+    }
+
+    .gallery-nav {
+        margin: 86px 0 16px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagination {
+        bottom: 36px;
+    }
+
+    .nav-buttons {
+        right: 76px;
+        gap: 8px;
+    }
+
+    .back-button, .next-button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .top-button {
+        right: 68px;
+    }
+
+    .back-top {
+        width: 48px;
+        height: 48px;
+        bottom: 68px;
+        font-size: 24px;
+        line-height: 56px;
+    }
+
+    .breakdown-landing {
+        padding-top: 106px;
+        height: calc(100vh - 72px);
+    }
+
+    .preview-window {
+        width: calc(100% - 32px);
+    }
+
+    .preview-display, .breakdown-body, .breakdown-suggestion {
+        flex-direction: column;
+    }
+
+    .project-character {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .project-info {
+        border-top: 1px solid;
+        border-left: none;
+    }
+
+    .project-description {
+        margin-top: 0;
+        padding: 16px;
+    }
+
+    .tags-class, .elements-field {
+        padding: 16px;
+    }
+
+    .breakdown-karma {
+        border-left: none;
+        border-top: 1px solid;
+        max-width: 100%;
+        padding: 32px 16px;
+    }
+
+    .chat-icon {
+        transform: scale(0.75);
+        left: 14px;
+        bottom: 80px;
+    }
+
+    .breakdown-cards {
+        padding-bottom: 16px;
+    }
+
+    .card-item.inactive {
+        transform: translateX(0);
+    }
+
+    .cards-buttons {
+        margin-top: 420px;
+        margin-right: -24px;
+    }
+
+    .feedback-intro, #feedback-prompt {
+        padding: 16px;
+    }
+
+    .breakdown-suggestion div {
+        width: auto;
+    }
+
+    .suggestion-intro h1 {
+        padding: 16px;
+    }
+
+    #suggestion-title {
+        font-size: 32px;
+    }
+
+    .suggestion-field p {
+        padding: 0;
+    }
+
+    .suggestion-field {
+        padding: 32px 16px;
+    }
+
+    .form-area {
+        padding: 0 16px;
+        min-height: calc(100vh - 72px);
+    }
+
+    .form-box {
+        margin-top: 0;
+        min-width: 100%;
+    }
+
+    .form-item {
+        min-width: 100%;
+    }
+
+    .form-item.preload {
+        transform: translateX(0);
+    }
+
+    .select-option, .drag-item p {
+        font-size: 16px;
+    }
+
+    .select-option, .drag-item {
+        padding: 4px 25px 6px;
+    }
+
+    .form-nav {
+        margin: 16px 0;
+        gap: 8px;
+    }
+
+    .progress-bar {
+        padding: 0 16px;
+    }
+
+    .progress-bar ul li:nth-last-child(1) {
+        padding-right: 0;
+    }
+
+    .tooltip-container, .tooltip-icon {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-item {
+        border-right: none;
+        border-bottom: 1px solid #111;
+    }
+
+    .footer-last {
+        border-bottom: none;
+    }
+
+    .easter-egg {
+        padding: 0 16px;
+        padding-top: 102px;
+    }
+}

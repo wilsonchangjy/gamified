@@ -143,7 +143,7 @@ export async function setSuggestionPrompts(description, elements) {
                 suggestion.text("Generating suggestions...");
                 $(".suggestion-field").toggleClass("active", true);
     
-                const answerText = await getAnswerFromChatGPT("How do I gamify my project: " + '"' + description + '"' + "Using one or two of these gamification elements: " + elements + "." + " Keep your responses within 100 words.");
+                const answerText = await getAnswerFromChatGPT("How do I gamify my project: " + '"' + description + '"' + "Using two or three of these gamification elements: " + elements + "." + " Keep your responses within 200 words.");
                 suggestion.text(answerText);
             }
             else {
