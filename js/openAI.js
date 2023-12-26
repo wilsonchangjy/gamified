@@ -74,10 +74,10 @@ export function toggleSystemRole(toggle) {
     }
 }
 
-// DaVinci-003 Model
+// DaVinci-003 Model (3.5 Turbo Instruct)
 export const getAnswerFromChatGPT = async (prompt) => {
     const body = {
-        "model": "text-davinci-003",
+        "model": "gpt-3.5-turbo-instruct",
         "prompt": prompt,
         "max_tokens": 256,
         "temperature": 0.5,
@@ -97,17 +97,3 @@ export const getAnswerFromChatGPT = async (prompt) => {
 
     return data.choices[0].text;
 }
-
-// export const generatePrompt = async (chatArray) => {
-//     let introduction = "Direct all responses in the context of gamification and game design. Avoid giving detailed examples. Keep your response within 100 words.";
-
-//     chatArray.forEach((entry) => {
-//         //const chatHistory = " " + entry;
-//         introduction += entry;
-//     });
-
-//     console.log(introduction);
-
-//     const answer = await getAnswerFromAI(introduction);
-//     return answer;
-// }
